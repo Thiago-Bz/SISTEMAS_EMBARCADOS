@@ -10,4 +10,8 @@ https://produto.mercadolivre.com.br/MLB-1084754118-kit-case-preto-fonte-raspberr
    Automação Industrial: Robôs, sistema de refrigeracão.
 
 4 - Harvard, von Neumann arquiteturas. A Harvard permite leitura simutanea dos dados
- enquanto VOn Neumann utiliza o mesmo espaço de memória para ambos
+ enquanto VOn Neumann utiliza o mesmo espaço de memória para ambos.
+ 
+
+5 - A escolha de um sistema embarcado do tipo System on chip varia para cada projeto a ser trabalhado,sendo que o microcontrolador deve suprir as necessidades do projeto,como a frequencia de operação, temperatura máxima suportada entre outros.
+Uma boa escolha é o raspberryPi, no qual possui umsistema operacional Linux, além de um bom processador. 
