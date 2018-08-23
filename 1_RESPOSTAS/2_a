@@ -1,0 +1,110 @@
+Por que o Linux, esse nome?
+hO nome vem direto do seu criador, Linus Torvalds. O nome é uma junção dos nomes Linus + UNIX
+
+O que são daemons?
+Daemon é um software que fica sem o controle do usuário.
+
+O que é o shell?
+O Shell (concha) é um programa que permite ao usuário interagir com o sistema operacional através de comandos digitados do teclado.
+
+Por que é possível executar o terminal como superusuário?
+Super-usuue ou Root (raiz) refere-se a um tipo de usuário com privilégio absolutos. Com o Root is possible to control total on the system (executar comandos absolutos e ter acesso a processos), o mesmo pode ser muito interessante e também muito perigoso. A fim de obter mais informações sobre como usar root, use os comandos como su e sudo . O primeiro loga como root e o superusuário em um terminal, podendo depois fazer logoff com o comando exit , o segundo apenas executar um comando em um terminal com privilégios de superusuário.
+
+Qual é o nome completo do usuário que não tem terminal, de acordo com o contexto?
+TAB : TAB autocompleta a linha de um texto.
+Quais são os elementos do teclado existentes nas instruções escritas anteriormente?
+Seta para cima / Seta para baixo .
+Apresente os recentes comandos no terminal para:
+(a) Obter mais informações sobre um comando.
+
+	man #nome_do_comando
+(b) uma lista com os arquivos dentro de uma massa.
+
+	$ ls
+c) Saca o caminho completo da massa.
+
+	$ pwd
+d) Trocar de massa.
+
+Ir para o diretório home do usuário logado:
+	$ cd
+Ir para o diretório acima do atual:
+	$ cd ..
+Voltar para o início da sessão anterior:
+	$ cd -
+Mudar para o diretório raiz do sistema:
+	$ cd /
+Ir para o diretório home do usuário logado:
+	$ cd ~
+Estando dentro de um diretório, deseja-se entrar em outro sítio ao vivo atual:
+	$ cd #nome_da_pasta
+Entrando em um diretório que não pertence ao atual:
+	$ cd #caminho_para_diretorio_que_se_deseja_entrar
+(e) Criar uma massa.
+
+	$ mkdir #nome_da_pasta
+(f) Apagar arquivos definitivamente.
+
+Arquivo se encontra no corrente atual:
+	$ rm #nome_do_arquivo
+ou
+
+	$ rm arquivo1 arquivo2 arquivo3
+Arquivo se encontra em outra pasta:
+	$ rm #caminho_para_arquivo
+Apagando arquivos com a mesma extensão:
+	$ rm *.txt
+g) Apagar massas definitivamente.
+
+Apagar pasta inteira recursivamente:
+	$ rm -rf nomedapasta/
+Arquivos e pastas do diretório atual:
+	$ rm -rf *
+(h) Copiar os arquivos.
+
+Copiar arquivo diretório do diretório / etc para o diretório / home / leonardo
+	$ cp /etc/passwd /home/leonardo/
+Copiar o arquivo de diretório / etc / para o diretório / home / leonardo renomeando a instalação como usuarios.txt
+	$ cp /etc/passwd /home/leonardo/usuarios.txt
+Copiar todos os arquivos com o nome da mesma em uma letra no diretório / lib / para o atual
+	$ cp /lib/l*.
+(i) massas Copiar.
+
+Copiar o diretório / home / leonardo / Downloads e todo o seu conteúdo recursivamente para o diretório / home / leonardo / Backup:
+	$ cp -r /home/leonardo/Downloads /home/leonardo/Backup
+(j) Moverar os arquivos.
+
+Mover o arquivo atual para o subdiretório Documentos:
+	$ mv passwd ./Documentos/
+(k) massas de mudas.
+
+Mover todo o conteúdo dentro da massa (arquivos e pastas) de teste1 para teste2.
+	$ mv teste1/* /home/leonardo/Documentos
+(l) massas renomeadas.
+
+	$ mv pasta1 pasta2
+(m) selecionar o conteúdo de um arquivo.
+
+	$ cat #nome_do_arquivo
+(n) entre o tipo de arquivo.
+
+	$ file arquivo
+(o) Limpar a tela do terminal.
+
+	$ clear
+(p) Encontrar ocorrências de palavras-chave em um arquivo-texto.
+
+	$ cat arquivo.txt | grep "String"
+(q) solicitar informações em um arquivo-texto.
+
+	$ sort [opcoes][arquivo] 
+(r) Substituir as ocorrências de palavras-chave em um arquivo-texto.
+
+O comando sed:
+	$ sed 's/palavra_p_substituir/palavra_nova/'
+(s) Conferir se dois arquivos são iguais.
+
+	$ diff arquivo1.txt arquivo2.txt
+(t) Você está lendo algo na tela
+
+	$ echo 'O que você quiser escrever.'
